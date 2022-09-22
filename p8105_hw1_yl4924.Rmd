@@ -2,7 +2,7 @@
 title: "p8015_hw1_yl4924"
 author: "Yongzheng Li"
 date: "2022-09-24"
-output: html_document
+output: github_document
 ---
 #Load the package
 ```{r}
