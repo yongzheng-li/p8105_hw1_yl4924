@@ -5,3 +5,9 @@ date: "2022-09-24"
 output: html_document
 ---
 
+# Load the 'penguin' dataset
+
+```{r}
+data("penguins", package = "palmerpenguins")
+```
+
