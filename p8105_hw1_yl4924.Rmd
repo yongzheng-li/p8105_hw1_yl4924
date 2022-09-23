@@ -4,12 +4,12 @@ author: "Yongzheng Li"
 date: "2022-09-24"
 output: github_document
 ---
-#Load the package
+# Load the package
 ```{r}
 library(tidyverse)
 ```
 
-#Problem 1
+# Problem 1
 
 ## Load the 'penguin' dataset
 ```{r}
