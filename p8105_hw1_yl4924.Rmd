@@ -9,9 +9,31 @@ output: github_document
 library(tidyverse)
 ```
 
+#Problem 1
 
-# Load the 'penguin' dataset
+## Load the 'penguin' dataset
 ```{r}
 data("penguins", package = "palmerpenguins")
+```
+
+## Display the 'penguin' dataset
+```{r}
+head(penguins)
+summary(penguins)
+nrow(penguins)
+ncol(penguins)
+```
+
+
+The dataset 'penguin' has 8 columns and 344 rows. The 8 columns are "species", "island", "bill_length_mm", "bill_depth_mm" , "flipper_length_mm", "body_mass_g" "sex" and "year". The mean bill_length, mean bill_depth, mean flipper_length, and mean body_mass for the dataset is 43.92mm, 17.15mm, 200.9mm, 4202g, respectively. It is worth to note that this dataset contain missing value.
+
+## Make the scatter plot
+```{r}
+ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)) + geom_point()
+```
+
+## Save the scatter plot in project directory
+```{r}
+ggsave("scatter_plot.pdf", height = 4, width = 6)
 ```
 
